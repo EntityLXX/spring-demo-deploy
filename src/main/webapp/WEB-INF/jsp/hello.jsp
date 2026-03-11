@@ -6,7 +6,7 @@
     <title>CI/CD Demo</title>
 </head>
 <body>
-    <h2>Success!</h2>
+    <h2>SuccessssssssssssssssssssYeah!</h2>
     <p>Message from Spring Boot: ${message}</p>
 </body>
 </html>
