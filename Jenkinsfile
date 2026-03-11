@@ -13,9 +13,10 @@ pipeline {
             }
         }
 
-        stage('Deploy to Local Tomcat') {
+		stage('Deploy to Local Tomcat') {
             steps {
-                bat 'copy target\\*.war "C:\\Users\\APU\\Downloads\\apache-tomcat-10.1.52-windows-x64\\apache-tomcat-10.1.52\\webapps\\ROOT.war" /Y'
+                // We use double backslashes for Windows paths in Groovy
+                bat 'copy target\\*.war "C:\\tomcat10\\webapps\\ROOT.war" /Y'
             }
         }
     }
